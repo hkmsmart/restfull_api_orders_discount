@@ -1,0 +1,222 @@
+{
+	"info": {
+		"_postman_id": "988c473e-7a89-4463-878e-cf19ced73a62",
+		"name": "example",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19480314"
+	},
+	"item": [
+		{
+			"name": "up",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/example/public/api/v1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"example",
+						"public",
+						"api",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "all_orders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/example/public/api/v1/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"example",
+						"public",
+						"api",
+						"v1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "customer_orders",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/example/public/api/v1/orders/customer/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"example",
+						"public",
+						"api",
+						"v1",
+						"orders",
+						"customer",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/example/public/api/v1/orders/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"example",
+						"public",
+						"api",
+						"v1",
+						"orders",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerId\": 3,\n        \"items\": [\n            {\n                \"productId\": 1,\n                \"quantity\": 1\n            },\n            {\n                \"productId\": 2,\n                \"quantity\": 2\n            }\n        ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/example/public/api/v1/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"example",
+						"public",
+						"api",
+						"v1",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "order",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/example/public/api/v1/orders/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"example",
+						"public",
+						"api",
+						"v1",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"customerId\": 3,\n        \"items\": [\n            {\n                \"productId\": 1,\n                \"quantity\": 1\n            },\n            {\n                \"productId\": 2,\n                \"quantity\": 1\n            }\n        ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/example/public/api/v1/orders/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"example",
+						"public",
+						"api",
+						"v1",
+						"orders",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "discount",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/example/public/api/v1/orders/discount/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"example",
+						"public",
+						"api",
+						"v1",
+						"orders",
+						"discount",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
