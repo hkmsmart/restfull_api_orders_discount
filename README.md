@@ -30,5 +30,5 @@ Proje örnek veriler:database/seeders klasörünün altındadır. örnek veriler
 
 kurulum bitmiştir.
 
-#Endpoint
+### Endpoint
 - postman_collection.json dosyasında, methodlar bulunmaktadır, istek atarak çalıştırabilirsiniz.
